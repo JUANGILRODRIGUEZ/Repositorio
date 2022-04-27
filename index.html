@@ -4,27 +4,265 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>The Boring Space Tesla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
-<header>
-    <menu>
-        <li>Home</li> 
-        <li>Contacto</li> 
-        <li>Sobre Juan</li>
-    </menu>
-</header>
+
+<!-- FALTA: 
+  links del header(que te lleven a una parte de la pagina)
+  links y efecto de hover(y que aparezca el nombre) sobre cada imagen principal
+  encontrar una manera de que quede mejor la descripcion de la pagina
+  nueva seccion que habla de neuralink
+  (tal vez si queda corta la pagina agregar info de Elon Musk)
+  links del pie de pagina
+  adaptarla a otros dispositivos
+  ver como agrego los fondos de los productos
+  agregar boton para ir a top of page
+-->
+
+
+<style> 
+@font-face {
+  font-family: titlefont;
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+}
+.Titulo_principal{
+  font-family: Helvetica, Arial, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  margin-right: 600px;
+}
+.zonabotones{ /* ESTO SE LLAMA navbar en bootstrap   */
+  background-color: rgba(192, 192, 192, 0.822);
+  justify-content: flex-end;
+  padding: 0px;
+  border-radius: 0px;
+}
+.card{
+  margin: 20px;
+}
+.button{
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+} 
+.button:hover{
+  background-color: lightgray;
+  padding-top: 15px; 
+}
+.btn4{
+  margin-right: 35px;
+}
+.zona_imagenes_iniciales{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.descripcion_general{
+    text-align: center;
+    background-color: rgba(238, 154, 120, 0.445);
+    padding: 80px;
+    margin: 0px;
+}
+.fila1prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.fila2prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos{
+  background-color: rgb(105, 88, 88);
+}
+.btn_carrito{
+  border-radius: 100%;
+  background-color: silver;
+  border-color: silver;
+  text-align: center;
+}
+.btn_carrito:hover{
+  background-color: rgb(24, 209, 24);
+  border-color: rgb(24, 209, 24);
+}
+.texto_calcu{
+  padding-top: 26px;
+  padding-left: 8%;
+  padding-bottom: 1px;
+  font-size: 18px;
+  background-color: lightgray;
+}
+.zona_calculo{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.text-muted{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+@media only screen and (max-width: 414px) {
+  .imagen1y3 {
+    display: none;
+  } 
+}
+</style>
+
+
+
 <body>
-    <style>body{background-color: beige;}</style>
-    <center><h1><u>WEB DE JUAN</u></h1></center>
-    <h2>Juan Gil Rodriguez</h2>
-    <h3><U>DATOS PERSONALES</U></h3>
-    <li>Fecha de nacimiento  →  21/02/2001</li>
-    <li>Edad  →  21</li>
-    <li>Deporte preferido  →  Tenis</li>
-    <li>Hincha de Estudiantes de La Plata</li>
-    <center><img style="border: 30px solid; color: black;" src="./Imagenes/veron.jpg" alt=""></center>
-    
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="btn zonabotones navbar sticky-top " >
+<a class="btn button" href="file:///C:/Users/mateo/OneDrive/Escritorio/Programacion%20Web/Poyecto%20Final/main.html">Home</a>
+<a class="btn button" href="#productos">Products</a>
+<a class="btn button" href="#pie">Contact</a>
+<a class="btn button btn4" href="#calculadora">Calculator</a>
+    </div>
+
+<h1 class="Titulo_principal sticky-top">The Boring Space Tesla</h1>
+
+<div class="zona_imagenes_iniciales">
+<img class="imagen1y3" src="./spacex-MEW1f-yu2KI-unsplash (1).jpg" alt="SpaceX" style="width: 560px;height: 400px;">
+
+<img class="responsive" src="./carter-baran-t5mV5TBzu4s-unsplash.jpg" alt="Tesla" style="width: 399px;height: 400px;">
+
+<img class="imagen1y3" src="./loop las vegas.jpg" alt="theboringCompany" style= "width: 560px;height: 400px;">
+</div>
+
+<h5 class="descripcion_general">This website serves as a gateway to a series of different products sold by Tesla, SpaceX and The Boring Company as well as future products from Neuralink. These are some of the companies that represent the future of technology. </h5>
+<div class="productos">
+  
+<div class="fila1prod" id="productos"> 
+    <!-- aca hay 2 columnas de productos con un fondo de color que esta atras con margenes de otro color a los costados donde no hay fotos -->
+    <div class="card" style="width: 18rem;">
+      <img src="./model s.jfif" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Model S</h5>
+        <p class="card-text">Model S is built for speed and range. Together with a wider body and chassis, these elements help you go down the straight or around corners quicker than ever.</p>
+        <a href="https://www.tesla.com/models" class="btn btn-primary" target="_blank">Buy</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(50000)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./rideshare.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Rideshare</h5>
+        <p class="card-text">Dedicated rideshare missions as low as $1M <br> Book your ride on the world’s first orbital class reusable rocket, manufactured and operated by SpaceX for the reliable and safe transport of people and payloads to Earth orbit and beyond</p>
+        <a href="https://www.spacex.com/rideshare/" class="btn btn-primary" target="_blank">Reserve</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(1000000)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./not a flamethrower.jfif" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Not-a-FlameThrower</h5>
+        <p class="card-text">The zombie apocalypse may not have arrived, but we are always preparing for the future. Fire extinguisher sold separately.</p>
+        <a href="https://www.boringcompany.com/not-a-flamethrower" class="btn btn-primary" target="_blank">Buy</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(500)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./loop.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Boring Tunnel</h5>
+        <p class="card-text">Provides convenient access to multiple utilities without surface disruption. Underground public transportation system. Say goodbye to soul-destroying traffic.</p>
+        <a href="https://www.boringcompany.com/products" class="btn btn-primary" target="_blank">Hire</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(10000000)">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="fila2prod">
+    <div class="card" style="width: 18rem;">
+      <img src="./solar roof.png" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Solar Roof</h5>
+        <p class="card-text">Install Solar Roof and power your home with a fully integrated solar and storage system. With a seamless design, each tile looks great up-close or from the street</p>
+        <a href="https://www.tesla.com/solarroof" class="btn btn-primary" target="_blank">Order Now</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(60000)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./model x.jfif" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Model X</h5>
+        <p class="card-text">With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built.</p>
+        <a href="https://www.tesla.com/modelx" class="btn btn-primary" target="_blank">Buy</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(65000)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./solar panel.jfif" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Solar Panel</h5>
+        <p class="card-text">Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider.</p>
+        <a href="https://www.tesla.com/solarpanels" class="btn btn-primary" target="_blank">Order Now</a>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(35000)">+</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./neuralink.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Neural Chip</h5>
+        <p class="card-text">A Direct Link Between the Brain & Everyday Technology, it's a starting point for a new kind of brain interface. This technology has the potential to treat a wide range of neurological disorders</p>
+        <a href="https://neuralink.com/" class="btn btn-primary" target="_blank">Coming Soon!</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="zona_calculadora" id="calculadora">
+<div class="texto_calcu">
+  <h3>Cart Calculator</h3>
+  <p>Add any item from above and I'll show you the total due!</p>
+</div>
+<div class="zona_calculo">
+  <p id="elTotal">The current total is: $0</p>
+  <button type="button" class="btn btn-primary " onclick="Limpiar()">Clear Cart</button>
+</div>
+
+  <script>
+    let Total = 0
+
+    function sumaProductos(Valoritem) {
+      Total = Total + Valoritem
+      document.getElementById("elTotal").innerHTML = "The current total is: " + "$" + Total;
+    }
+
+    function Limpiar() {
+      Total=0
+      document.getElementById("elTotal").innerHTML = "The current total is: " + "$" + 0;
+    }
+
+  </script>
+
+</div>
+<div class="container" id="pie">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="https://www.tesla.com/" class="nav-link px-2 text-muted">Tesla</a></li>
+      <li class="nav-item"><a href="https://www.spacex.com/" class="nav-link px-2 text-muted">SpaceX</a></li>
+      <li class="nav-item"><a href="https://www.boringcompany.com/" class="nav-link px-2 text-muted">The Boring Co.</a></li>
+      <li class="nav-item"><a href="https://neuralink.com/" class="nav-link px-2 text-muted">Neuralink</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 Mateo Lundahl Kalisz, Lic.</p>
+    <p class="text-center text-muted">Contact Information: 
+      <br> <b>Email</b> programador@gmail.com
+    </p>
+  </footer>
+
+
+</div>
+
+
+
+</div>
+
+
 
 </body>
 </html>
