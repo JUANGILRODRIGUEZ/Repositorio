@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +21,11 @@
   ver como agrego los fondos de los productos
   agregar boton para ir a top of page
 -->
+
+
+
+
+
 <body>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,6 +51,7 @@
 <div class="productos">
   
 <div class="fila1prod" id="productos"> 
+    <!-- aca hay 2 columnas de productos con un fondo de color que esta atras con margenes de otro color a los costados donde no hay fotos -->
     <div class="card" style="width: 18rem;">
       <img src="./paleta hack 02 21.jpg" class="card-img-top" alt="">
       <div class="card-body">
@@ -124,7 +130,7 @@
         <p class="card-text">La Head Padel Pro es sin duda la pelota más famosa del circuito profesional World Padel Tour, un modelo además, elegido por los propios jugadores.  
             Se trata de un modelo premium de gran control y larga duración para los padelistas más exigentes</p>
         <a href="https://www.solodeportes.com.ar/tubo-x3-padel-pro-head-7978710.html" class="btn btn-primary" target="_blank">Comprar</a>
-        <button type="button" class="btn btn-primary btn_carrito" onclick="sumarProductos(2515)">+</button>
+        <button type="button" class="btn btn-primary btn_carrito" onclick="sumaProductos(2515)">+</button>
       </div>
     </div>
   </div>
@@ -142,7 +148,7 @@
   <script>
     let Total = 0
 
-    function sumarProductos(Valoritem) {
+    function sumaProductos(Valoritem) {
       Total = Total + Valoritem
       document.getElementById("elTotal").innerHTML = "TOTAL: " + "$" + Total;
     }
@@ -170,5 +176,12 @@
 
 
 </div>
+
+
+
+</div>
+
+
+
 </body>
 </html>
