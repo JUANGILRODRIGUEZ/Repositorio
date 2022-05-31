@@ -1,0 +1,88 @@
+@font-face {
+    font-family: titlefont;
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  }
+  .Titulo_principal{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    margin-right: 600px;
+  }
+  .zonabotones{ /*navbar   */
+    background-color: rgba(192, 192, 192, 0.822);
+    justify-content: flex-end;
+    padding: 0px;
+    border-radius: 0px;
+  }
+  .card{
+    margin: 20px;
+  }
+  .button{
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  } 
+  .button:hover{
+    background-color: lightgray;
+    padding-top: 15px; 
+  }
+  .btn4{
+    margin-right: 35px;
+  }
+  .zona_imagenes_iniciales{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+  .descripcion_general{
+      text-align: center;
+      background-color: rgba(238, 154, 120, 0.445);
+      padding: 80px;
+      margin: 0px;
+  }
+  .fila1prod{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+  }
+  .fila2prod{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .productos{
+    background-color: rgb(135, 187, 211);
+  }
+  .btn_carrito{
+    border-radius: 100%;
+    background-color: silver;
+    border-color: silver;
+    text-align: center;
+  }
+  .btn_carrito:hover{
+    background-color: rgb(24, 209, 24);
+    border-color: rgb(24, 209, 24);
+  }
+  .texto_calcu{
+    padding-top: 26px;
+    padding-left: 8%;
+    padding-bottom: 1px;
+    font-size: 18px;
+    background-color: lightgray;
+  }
+  .zona_calculo{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .text-muted{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  @media only screen and (max-width: 414px) {
+    .imagen1y3 {
+      display: none;
+    } 
+  }
