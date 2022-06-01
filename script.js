@@ -1,7 +1,7 @@
 let Total = 0
 
-function sumarprecio(Valoritem) {
-  Total = Total + Valoritem
+function sumarprecio(valorproducto) {
+  Total = Total + valorproducto
   document.getElementById("Total").innerHTML = "TOTAL: " + "$" + Total + " Pesos";
 }
 
