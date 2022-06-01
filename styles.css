@@ -1,25 +1,56 @@
+.titulo{
 
-@font-face {
-    font-family: titlefont;
-    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-  }
-  .Titulo_principal{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    margin-right: 600px;
-  }
-  .zonabotones{ /*navbar   */
+}
+
+
+.boton_navbar{ 
     background-color: rgba(192, 192, 192, 0.822);
     justify-content: flex-end;
     padding: 0px;
     border-radius: 0px;
   }
-  .card{
+.logos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.slogan{
+    text-align: center;
+    background-color: rgba(217, 135, 135, 0.605);
+    padding: 80px;
+    margin: 0px;
+}
+.slogan2{
+    text-align: center;
+    background-color: rgba(228, 139, 104, 0.603);
+    padding: 80px;
+    margin: 0px;
+}
+.productos{
+    background-color: rgb(105, 88, 88);
+}
+.fila1{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.fila2{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.fila3{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card{
     margin: 20px;
   }
-  .button{
+.button{
     padding: 20px;
     padding-left: 25px;
     padding-right: 25px;
@@ -28,45 +59,14 @@
     background-color: lightgray;
     padding-top: 15px; 
   }
-  .btn4{
+.boton4{
     margin-right: 35px;
   }
-  .zona_imagenes_iniciales{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-  }
-  .descripcion_general{
-      text-align: center;
-      background-color: rgba(238, 154, 120, 0.445);
-      padding: 80px;
-      margin: 0px;
-  }
-  .fila1prod{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  
-  }
-  .fila2prod{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  .productos{
-    background-color: rgb(135, 187, 211);
-  }
-  .btn_carrito{
-    border-radius: 100%;
-    background-color: silver;
-    border-color: silver;
-    text-align: center;
-  }
-  .btn_carrito:hover{
+  .boton_carrito:hover{
     background-color: rgb(24, 209, 24);
     border-color: rgb(24, 209, 24);
   }
-  .texto_calcu{
+  .textocalculadora{
     padding-top: 26px;
     padding-left: 8%;
     padding-bottom: 1px;
@@ -83,7 +83,8 @@
     margin-right: 3px;
   }
   @media only screen and (max-width: 414px) {
-    .imagen1y3 {
+    .logo{
       display: none;
     } 
   }
+
