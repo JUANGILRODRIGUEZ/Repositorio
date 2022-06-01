@@ -1,183 +1,352 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link rel="shortcut icon" href="pelota_tenis.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="pelota_tenis.png" />
     <script src="./script.js"></script>
     <title>The PADEL Store</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="boton_navbar navbar">
+      <h1 class="titulo">THE PADEL STORE</h1>
+      <a class="boton button" href="https://repositorio-phi.vercel.app/"
+        >Inicio</a
+      >
+      <a class="boton button" href="#productos">Productos</a>
+      <a class="boton button" href="#footer">Contacto</a>
+      <a class="boton button boton4" href="#calculadora">Ver el Total</a>
+    </header>
 
-  <header class="boton_navbar navbar">
-        <h1 class="titulo">THE PADEL STORE</h1>           
-<a class="boton button" href="https://repositorio-phi.vercel.app/">Inicio</a>
-<a class="boton button" href="#productos">Productos</a>
-<a class="boton button" href="#footer">Contacto</a>
-<a class="boton button boton4" href="#calculadora">Ver el Total</a>
+    <section class="logos">
+      <img
+        class="logo"
+        src="./BullpadelLogo.png"
+        alt="Bullpadel"
+        style="width: 560px; height: 400px"
+      />
 
+      <img
+        class="responsive"
+        src="./worldpadeltourlogo.jpg"
+        alt="World Padel Tour"
+        style="width: 399px; height: 400px"
+      />
 
-</header>
-   
-
-<section 
-class="logos">
-        <img class="logo" src="./BullpadelLogo.png" alt="Bullpadel" style="width: 560px;height: 400px;">
-        
-        <img class="responsive" src="./worldpadeltourlogo.jpg" alt="World Padel Tour" style="width: 399px;height: 400px;">
-        
-        <img class="logo" src="./headlogo.jpg" alt="World Padel Tour" style= "width: 560px;height: 400px;">
-        
+      <img
+        class="logo"
+        src="./headlogo.jpg"
+        alt="World Padel Tour"
+        style="width: 560px; height: 400px"
+      />
     </section>
 
-<h5 class="slogan">Contamos con un servicio personalizado para que puedas elegir la pala que se amolde a tu juego</h5>
+    <h5 class="slogan">
+      Contamos con un servicio personalizado para que puedas elegir la pala que
+      se amolde a tu juego
+    </h5>
 
-<section class="productos">
-    
+    <section class="productos">
+      <section class="fila1">
+        <div class="card" style="width: 25rem">
+          <img src="./paletahack0221.jpg" class="card-img-top" alt="Hack" />
+          <div class="card-body">
+            <h5 class="card-title">Hack 02 21</h5>
+            <p class="card-text">
+              La nueva pala Hack 02 2021 es una pala de máxima potencia y alto
+              rendimiento, diseñada para jugadores profesionales o avanzados,
+              con marco 100% fibra de carbono, que incorpora el nuevo sistema
+              Adaptia y también el novedoso CustomWeigth.
+            </p>
+            <a
+              href="https://www.bullpadelargentina.com.ar/productos/hack-02-21/"
+              class="btn btn-primary"
+              target="_blank"
+              >Mas Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumaProductos(82000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img src="./paletashake2021.jpg" class="card-img-top" alt="Shake" />
+          <div class="card-body">
+            <h5 class="card-title">Shake 2021</h5>
+            <p class="card-text">
+              La paleta Bullpadel Shake colección 2021 es una paleta muy ligera
+              y de máximo control para jugadores amateurs y ocasionales
+            </p>
+            <a href="" class="btn btn-primary" target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumarprecio(25500)"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img src="./hack_comfort_2021.jpg" class="card-img-top" alt="Hack" />
+          <div class="card-body">
+            <h5 class="card-title">Hack Comfort 2021</h5>
+            <p class="card-text">
+              La nueva paleta Hack Comfort colección 2021, es de máxima potencia
+              y alto rendimiento. Está diseñada para jugadores profesionales y
+              avanzados con marco 100% fibra de carbono
+            </p>
+            <a
+              href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/"
+              class="btn btn-primary"
+              target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumarprecio(59000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </section>
 
+      <h5 class="slogan2">
+        ¡Comprá los mejores productos al mejor precio! ¡Solo en The PADEL Store!
+      </h5>
 
-    <section class="fila1">
-    <div class="card" style="width: 25rem;">
-        <img src="./paletahack0221.jpg" class="card-img-top" alt="Hack">
-        <div class="card-body">
-          <h5 class="card-title">Hack 02 21</h5>
-          <p class="card-text">La nueva pala Hack 02 2021 es una pala de máxima potencia y alto rendimiento, diseñada para jugadores profesionales o avanzados, con marco 100% fibra de carbono, que incorpora el nuevo sistema Adaptia y también el novedoso CustomWeigth.</p>
-          <a href="https://www.bullpadelargentina.com.ar/productos/hack-02-21/" class="btn btn-primary" target="_blank">Mas Información</a>
-          <button type="button" class="boton btn-primary boton_carrito" onclick="sumaProductos(82000)">Agregar al Carrito</button>
+      <section class="fila2">
+        <div class="card" style="width: 25rem">
+          <img
+            src="./palaheadgraphene360.jpg"
+            class="card-img-top"
+            alt="Graphene"
+          />
+          <div class="card-body">
+            <h5 class="card-title">HEAD Graphene 360+</h5>
+            <p class="card-text">
+              Este modelo es más cómodo, manejable y potente que su predecesor,
+              gracias al Graphene 360+ en el marco para un toque y potencia
+              ilimitados, y al nuevo material híbrido en la cara. Esta paleta de
+              alta gama Head Graphene 360+ Delta Hybrid With Cb está destinada a
+              los jugadores de nivel avanzado o profesional con amplia
+              experiencia en el padel
+            </p>
+            <a
+              href="https://www.solodeportes.com.ar/paleta-padel-head-graphene-360-delta-hybrid.html?nosto=productcategory-nosto-1-fallback-nosto-1"
+              class="btn btn-primary"
+              target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumaProductos(67390)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="./palaHEADZephyrPro.jpg"
+            class="card-img-top"
+            alt="Zephyr"
+          />
+          <div class="card-body">
+            <h5 class="card-title">HEAD Zephyr Pro</h5>
+            <p class="card-text">
+              Está ideada para jugadores de nivel intermedio que quieren que su
+              juego fluya. Haz que tu juego fluya con la pala de pádel ZEPHYR
+              PRO, que ofrece comodidad, maniobrabilidad y potencia. Aunque sea
+              la pala más pesada de la serie ZEPHYR, lo que garantiza una mayor
+              estabilidad al impacto, te ofrece una sensación suave y de confort
+            </p>
+            <a
+              href="https://www.solodeportes.com.ar/paleta-de-padel-head-zephyr-pro.html?nosto=productcategory-nosto-1-fallback-nosto-1"
+              class="btn btn-primary"
+              target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumaProductos(54720)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img src="./bolso_tour.jpg" class="card-img-top" alt="Bolso Tour" />
+          <div class="card-body">
+            <h5 class="card-title">Bolso Tour</h5>
+            <p class="card-text">
+              El bolso paletero Tour es el hermano pequeño, independiente y
+              funcional de nuestra colección. Cuenta con un compartimento
+              lateral acolchado para una paleta y un amplio compartimento para
+              ropa y calzado, además de un bolsillo exterior para accesorios
+            </p>
+            <a
+              href="https://www.bullpadelargentina.com.ar/productos/bolso-tour-importado/"
+              class="btn btn-primary"
+              target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumaProductos(15400)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="fila3">
+        <div class="card" style="width: 25rem">
+          <img src="./palaaxymwoman22.jpg" class="card-img-top" alt="AXYM" />
+          <div class="card-body">
+            <h5 class="card-title">AXYM Woman 22</h5>
+            <p class="card-text">
+              Versión para mujer de la nueva paleta Bullpadel AXYM, se destaca
+              por su manejabilidad y eficacia. Es una paleta para jugadores de
+              nivel medio o avanzado
+            </p>
+            <a
+              href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/"
+              class="btn btn-primary"
+              target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumaProductos(83000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img src="./pelotas_padel.jpg" class="card-img-top" alt="Pelotas" />
+          <div class="card-body">
+            <h5 class="card-title">Pelotas HEAD Padel Pro</h5>
+            <p class="card-text">
+              La Head Padel Pro es sin duda la pelota más famosa del circuito
+              profesional World Padel Tour, un modelo además, elegido por los
+              propios jugadores. Se trata de un modelo premium de gran control y
+              larga duración para los padelistas más exigentes
+            </p>
+            <a
+              href="https://www.solodeportes.com.ar/tubo-x3-padel-pro-head-7978710.html"
+              class="btn btn-primary"
+              target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumaProductos(2515)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img src="protector.png" class="card-img-top" alt="Protector" />
+          <div class="card-body">
+            <h5 class="card-title">Protector de Paleta</h5>
+            <p class="card-text">
+              Protegé la cabeza de tu raquet con este protector invisible. Ayuda
+              a reducir el impacto de golpes y rayaduras
+            </p>
+            <a
+              href="https://www.solodeportes.com.ar/tubo-x3-padel-pro-head-7978710.html"
+              class="btn btn-primary"
+              target="_blank"
+              >Más Información</a
+            >
+            <button
+              type="button"
+              class="boton btn-primary boton_carrito"
+              onclick="sumaProductos(850)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <div class="carro" id="calculadora">
+        <div class="textocalculadora">
+          <h3>Carrito</h3>
+          <p>
+            ¡Tocá en "Agregar al Carrito" en el producto que querés para
+            agregarlo al carrito!
+          </p>
+        </div>
+        <div class="zona_calculo">
+          <p id="Total">TOTAL: $0 Pesos</p>
+          <button type="button" class="btn btn-primary" onclick="borrar()">
+            Vaciar Carrito
+          </button>
         </div>
       </div>
-      <div class="card" style="width: 25rem;">
-        <img src="./paletashake2021.jpg" class="card-img-top" alt="Shake">
-        <div class="card-body">
-          <h5 class="card-title">Shake 2021</h5>
-          <p class="card-text">La paleta Bullpadel Shake colección 2021 es una paleta muy ligera y de máximo control para jugadores amateurs y ocasionales</p>
-          <a href="" class="btn btn-primary" target="_blank">Más Información</a>
-          <button type="button" class="boton btn-primary boton_carrito" onclick="sumarprecio(25500)">Agregar al carrito</button>
-        </div>
-      </div>
-      <div class="card" style="width: 25rem;">
-        <img src="./hack_comfort_2021.jpg" class="card-img-top" alt="Hack">
-        <div class="card-body">
-          <h5 class="card-title">Hack Comfort 2021</h5>
-          <p class="card-text">La nueva paleta Hack Comfort colección 2021, es de máxima potencia y alto rendimiento. Está diseñada para jugadores profesionales y avanzados con marco 100% fibra de carbono</p>
-          <a href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/" class="btn btn-primary" target="_blank">Más Información</a>
-          <button type="button" class="boton btn-primary boton_carrito" onclick="sumarprecio(59000)">Agregar al Carrito</button>
-        </div>
-      </div>
-</section>
+    </section>
 
-
-<h5 class="slogan2">¡Comprá los mejores productos al mejor precio! ¡Solo en The PADEL Store!</h5>
-
-
-
-
-    <section class="fila2">
-    <div class="card" style="width: 25rem;">
-      <img src="./palaheadgraphene360.jpg" class="card-img-top" alt="Graphene">
-      <div class="card-body">
-        <h5 class="card-title">HEAD Graphene 360+</h5>
-        <p class="card-text">Este modelo es más cómodo, manejable y potente que su predecesor, gracias al Graphene 360+ en el marco para un toque y potencia ilimitados, y al nuevo material híbrido en la cara. Esta paleta de alta gama Head Graphene 360+ Delta Hybrid With Cb está destinada a los jugadores de nivel avanzado o profesional con amplia experiencia en el padel</p>
-        <a href="https://www.solodeportes.com.ar/paleta-padel-head-graphene-360-delta-hybrid.html?nosto=productcategory-nosto-1-fallback-nosto-1" class="btn btn-primary" target="_blank">Más Información</a>
-        <button type="button" class="boton btn-primary boton_carrito" onclick="sumaProductos(67390)">Agregar al Carrito</button>
-      </div>
+    <div class="container" id="footer">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a
+              href="https://bullpadelargentina.com.ar"
+              class="nav-link px-2 text-muted"
+              >Bullpadel Argentina</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.solodeportes.com.ar/deportes/paddle.html"
+              class="nav-link px-2 text-muted"
+              >Solo Deportes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.head.com/en/padel.html"
+              class="nav-link px-2 text-muted"
+              >HEAD</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted">
+          Desarrollador Juan Francisco Gil Rodríguez
+        </p>
+        <p class="text-center text-muted">
+          Información de Contacto: <br />
+          <b>Mail</b> jgilrodriguez@itba.edu.ar
+        </p>
+      </footer>
     </div>
-    <div class="card" style="width: 25rem;">
-      <img src="./palaHEADZephyrPro.jpg" class="card-img-top" alt="Zephyr">
-      <div class="card-body">
-        <h5 class="card-title">HEAD Zephyr Pro</h5>
-        <p class="card-text">Está ideada para jugadores de nivel intermedio que quieren que su juego fluya.
-            Haz que tu juego fluya con la pala de pádel ZEPHYR PRO, que ofrece comodidad, maniobrabilidad y potencia.
-            Aunque sea la pala más pesada de la serie ZEPHYR, lo que garantiza una mayor estabilidad al impacto, te ofrece una sensación suave y de confort</p>
-        <a href="https://www.solodeportes.com.ar/paleta-de-padel-head-zephyr-pro.html?nosto=productcategory-nosto-1-fallback-nosto-1" class="btn btn-primary" target="_blank">Más Información</a>
-        <button type="button" class="boton btn-primary boton_carrito" onclick="sumaProductos(54720)">Agregar al Carrito</button>
-      </div>
-    </div>
-    <div class="card" style="width: 25rem;">
-      <img src="./bolso_tour.jpg" class="card-img-top" alt="Bolso Tour">
-      <div class="card-body">
-        <h5 class="card-title">Bolso Tour</h5>
-        <p class="card-text">El bolso paletero Tour es el hermano pequeño, independiente y funcional de nuestra colección. 
-
-            Cuenta con un compartimento lateral acolchado para una paleta y un amplio compartimento para ropa y calzado, además de un bolsillo exterior para accesorios</p>
-        <a href="https://www.bullpadelargentina.com.ar/productos/bolso-tour-importado/" class="btn btn-primary" target="_blank">Más Información</a>
-        <button type="button" class="boton btn-primary boton_carrito" onclick="sumaProductos(15400)">Agregar al Carrito</button>
-      </div>
-    </div></section>
-
-
-
-
-    <section class="fila3">
-        <div class="card" style="width: 25rem;">
-            <img src="./palaaxymwoman22.jpg" class="card-img-top" alt="AXYM">
-            <div class="card-body">
-              <h5 class="card-title">AXYM Woman 22</h5>
-              <p class="card-text">Versión para mujer de la nueva paleta Bullpadel AXYM, se destaca por su manejabilidad y eficacia.
-      
-                  Es una paleta para jugadores de nivel medio o avanzado</p>
-              <a href="https://www.bullpadelargentina.com.ar/productos/hack-comfort-2021/" class="btn btn-primary" target="_blank">Más Información</a>
-              <button type="button" class="boton btn-primary boton_carrito" onclick="sumaProductos(83000)">Agregar al Carrito</button>
-            </div>
-            </div>
-        <div class="card" style="width: 25rem;">
-                <img src="./pelotas_padel.jpg" class="card-img-top" alt="Pelotas">
-              <div class="card-body">
-                  <h5 class="card-title">Pelotas HEAD Padel Pro</h5>
-                  <p class="card-text">La Head Padel Pro es sin duda la pelota más famosa del circuito profesional World Padel Tour, un modelo además, elegido por los propios jugadores.  
-                      Se trata de un modelo premium de gran control y larga duración para los padelistas más exigentes</p>
-                  <a href="https://www.solodeportes.com.ar/tubo-x3-padel-pro-head-7978710.html" class="btn btn-primary" target="_blank">Más Información</a>
-                  <button type="button" class="boton btn-primary boton_carrito" onclick="sumaProductos(2515)">Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="card" style="width: 25rem;">
-                <img src="protector.png" class="card-img-top" alt="Protector">
-                <div class="card-body">
-                  <h5 class="card-title">Protector de Paleta</h5>
-                  <p class="card-text">Protegé la cabeza de tu raquet con este protector invisible. Ayuda a reducir el impacto de golpes y rayaduras</p>
-                  <a href="https://www.solodeportes.com.ar/tubo-x3-padel-pro-head-7978710.html" class="btn btn-primary" target="_blank">Más Información</a>
-                  <button type="button" class="boton btn-primary boton_carrito" onclick="sumaProductos(850)">Agregar al Carrito</button>
-                </div>
-            </div>
-</section>
-</section>
-
-<section>
-    <div class="carro" id="calculadora">
-    <div class="textocalculadora">
-      <h3>Carrito</h3>
-      <p>¡Tocá en "Agregar al Carrito" en el producto que querés para agregarlo al carrito!</p>
-    </div>
-    <div class="zona_calculo">
-      <p id="Total">TOTAL: $0 Pesos</p>
-      <button type="button" class="btn btn-primary " onclick="borrar()">Vaciar Carrito</button>
-    </div>
-  </div></section>
-
-
-
-
-<div class="container" id="footer">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="https://bullpadelargentina.com.ar" class="nav-link px-2 text-muted">Bullpadel Argentina</a></li>
-        <li class="nav-item"><a href="https://www.solodeportes.com.ar/deportes/paddle.html" class="nav-link px-2 text-muted">Solo Deportes</a></li>
-        <li class="nav-item"><a href="https://www.head.com/en/padel.html" class="nav-link px-2 text-muted">HEAD</a></li>
-      </ul>
-      <p class="text-center text-muted">Desarrollador Juan Francisco Gil Rodríguez</p>
-      <p class="text-center text-muted">Información de Contacto: 
-        <br> <b>Mail</b> jgilrodriguez@itba.edu.ar
-      </p>
-    </footer>
-</div>
-
-
-
-
-
-
-</body>
+  </body>
 </html>
