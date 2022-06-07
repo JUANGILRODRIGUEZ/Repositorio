@@ -11,18 +11,18 @@
 }
 .slogan {
   text-align: center;
-  background-color: rgba(217, 135, 135, 0.605);
+  background-color: rgba(192, 192, 192, 0.822);
   padding: 80px;
   margin: 0px;
 }
 .slogan2 {
   text-align: center;
-  background-color: rgba(228, 139, 104, 0.603);
+  background-color: rgba(192, 192, 192, 0.822);
   padding: 80px;
   margin: 0px;
 }
 .productos {
-  background-color: rgb(105, 88, 88);
+  background-color:beige;
 }
 .fila1 {
   justify-content: center;
@@ -43,20 +43,18 @@
   margin: 20px;
 }
 .button {
+  color:rgb(148, 159, 148);
   padding: 20px;
   padding-left: 25px;
   padding-right: 25px;
 }
 .button:hover {
-  background-color: lightgray;
+  background-color:rgb(181, 191, 181);
   padding-top: 15px;
 }
 .boton4 {
+  color: gray;
   margin-right: 35px;
-}
-.boton_carrito:hover {
-  background-color: rgb(24, 209, 24);
-  border-color: rgb(24, 209, 24);
 }
 .textocalculadora {
   padding-top: 26px;
@@ -78,4 +76,13 @@
   .logo {
     display: none;
   }
+}
+
+.botonagregarcarrito{
+  background-color: lightgray;
+  color: black
+}
+.botoncarrito{
+  background-color: lightgray;
+  color: black 
 }
