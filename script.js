@@ -11,3 +11,4 @@ function borrar() {
   document.getElementById("Total").innerHTML = 
     "TOTAL: " + "$" + 0 + " Pesos";
 }
+
