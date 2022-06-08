@@ -4,51 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="pelota_tenis.png" />
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <title>The PADEL Store</title>
+
   </head>
-  <body>
-    <header class="boton_navbar navbar">
-      <h1 class="titulo">THE PADEL STORE</h1>
-      <a class="boton button" href="https://repositorio-phi.vercel.app/"
-        >Inicio</a
-      >
-      <a class="boton button" href="#productos">Productos</a>
-      <a class="boton button" href="#footer">Contacto</a>
-      <a class="boton button boton4" href="#calculadora">Ver el Total</a>
-    </header>
+ <body>
+  
+  <header class="boton_navbar navbar">
+    <h1 class="titulo">THE PADEL STORE</h1> 
+    <a class="boton button" href="https://repositorio-phi.vercel.app/"
+      >Inicio</a
+    >
+    <a class="boton button" href="#productos">Productos</a>
+    <a class="boton button" href="#footer">Contacto</a>
+    <a class="boton button boton4" href="#calculadora">Ver el Total</a>
+  </header>
+  <div class="slideshow-container">
 
-    <section class="logos">
-      <img
-        class="logo"
-        src="./BullpadelLogo.png"
-        alt="Bullpadel"
-        style="width: 560px; height: 400px"
-      />
-
-      <img
-        class="responsive"
-        src="./worldpadeltourlogo.jpg"
-        alt="World Padel Tour"
-        style="width: 399px; height: 400px"
-      />
-
-      <img
-        class="logo"
-        src="./headlogo.jpg"
-        alt="World Padel Tour"
-        style="width: 560px; height: 400px"
-      />
-    </section>
-
+    <div class="mySlides">
+      
+    <img src="./worldpadeltourlogo.jpg" style="width:100%">
+      
+    </div>
+    <div class="mySlides">
+      
+      <img src="./BullpadelLogo.png" style="width:100%">
+        
+      </div>
+    
+    <div class="mySlides">
+      
+      <img src="./headlogo.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides">
+      
+      <img src="./cancha2.jpg" style="width:100%">
+      
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    
     <h5 class="slogan">
       Contamos con un servicio personalizado para que puedas elegir la pala que
       se amolde a tu juego
@@ -70,10 +73,7 @@
             <button
               type="button"
               class="botonagregarcarrito"
-              onclick="sumarprecio(82000)"
-            >
-              Agregar al Carrito
-            </button>
+              onclick="sumarprecio(82000)">Agregar al Carrito</button>
             <h5>$82000</h5>
           </div>
         </div>
@@ -253,8 +253,7 @@
             <button
               type="button"
               class="botonagregarcarrito"
-              onclick="sumarprecio(850)"
-            >
+              onclick="sumarprecio(850)">
               Agregar al Carrito
             </button>
             <h5>$850</h5>
@@ -274,7 +273,7 @@
         </div>
         <div class="zona_calculo">
           <p id="Total">TOTAL: $0 Pesos</p>
-          <button type="button" class="botoncarrito" onclick="borrar()">
+          <button type="button" class="botoncarrito" onclick="Borrar()">
             Vaciar Carrito
           </button>
         </div>
@@ -315,5 +314,38 @@
         </p>
       </footer>
     </div>
-  </body>
+    
+ </body>
+<script>
+ let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+<script src="./script.js"></script>
+
 </html>
+
+
