@@ -1,15 +1,13 @@
 .boton_navbar {
   background-color: rgba(192, 192, 192, 0.822);
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0px;
   border-radius: 0px;
 }
-
-.logos {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.titulo {
+  text-align: center;
 }
+
 .slogan {
   text-align: center;
   background-color: rgba(192, 192, 192, 0.822);
@@ -23,7 +21,7 @@
   margin: 0px;
 }
 .productos {
-  background-color:beige;
+  background-color: beige;
 }
 .fila1 {
   justify-content: center;
@@ -42,18 +40,19 @@
 }
 .card {
   background-color: beige;
-  margin: 20px;
+  margin: 50px;
 }
 .button {
-  color:rgb(148, 159, 148);
+  color: rgb(148, 159, 148);
   padding: 20px;
   padding-left: 25px;
   padding-right: 25px;
 }
 .button:hover {
-  background-color:rgb(181, 191, 181);
+  background-color:aliceblue;
   padding-top: 15px;
 }
+
 .boton4 {
   color: gray;
   margin-right: 35px;
@@ -80,15 +79,21 @@
   }
 }
 
-.botonagregarcarrito{
+.botonagregarcarrito {
   background-color: lightgray;
-  color: black
+  color: black;
 }
-.botoncarrito{
+.botonagregarcarrito:hover{
+  background-color: aliceblue;
+  padding-top: 0px;
+}
+.botoncarrito {
   background-color: lightgray;
-  color: black 
-} 
-* {box-sizing:border-box}
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -103,7 +108,8 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -125,8 +131,9 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -161,15 +168,18 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
 
-
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
