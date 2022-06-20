@@ -7,9 +7,12 @@
 .titulo {
   text-align: center;
 }
+
 .logo{
   text-align: center;
-  
+  margin: 50px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .slogan {
   text-align: center;
