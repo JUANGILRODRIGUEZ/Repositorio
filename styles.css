@@ -8,10 +8,9 @@
   text-align: center;
 }
 
-.logo{
+.logo {
   text-align: center;
   margin: 15px;
-
 }
 .slogan {
   text-align: center;
@@ -88,7 +87,7 @@
   background-color: lightgray;
   color: black;
 }
-.botonagregarcarrito:hover{
+.botonagregarcarrito:hover {
   background-color: aliceblue;
   padding-top: 0px;
 }

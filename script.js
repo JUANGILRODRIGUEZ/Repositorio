@@ -7,7 +7,7 @@ function sumarprecio(valorproducto) {
 }
 function Borrar() {
   Total = 0;
-  document.getElementById("Total").innerHTML = "TOTAL:"  + " $" + 0 + " Pesos";
+  document.getElementById("Total").innerHTML = "TOTAL:" + " $" + 0 + " Pesos";
 }
 
 let slideIndex = 1;
